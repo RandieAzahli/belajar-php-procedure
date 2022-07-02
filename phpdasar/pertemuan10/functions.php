@@ -1,0 +1,60 @@
+<?php
+
+// koneksi ke database
+
+$host = "localhost";
+$username = "root";
+$password = "12354321";
+$database = "phpdasar";
+
+$koneksi = mysqli_connect($host, $username, $password);
+
+if ($koneksi) {
+	$coba = mysqli_select_db($koneksi, $database);
+	if ($coba) {
+		echo "";
+	} else {
+		echo mysqli_error($koneksi);
+	}
+}
+
+function query($query)
+{
+	global $koneksi;
+	$result = mysqli_query($koneksi, $query);
+	$rows = [];
+	while ($row = mysqli_fetch_assoc($result)) {
+		$rows[] = $row;
+	}
+	return $rows;
+}
+
+function tambah($data)
+{
+	global $koneksi;
+
+	$nrp = htmlspecialchars($data["nama"]);
+	$nama = htmlspecialchars($data["nrp"]);
+	$email = htmlspecialchars($data["email"]);
+	$jurusan = htmlspecialchars($data["jurusan"]);
+	$gambar = htmlspecialchars($data["gambar"]);
+
+	// query insert data
+	$query = "INSERT INTO mahasiswa
+				VALUES
+				('','$nama','$nrp','$email','$jurusan','$gambar')";
+
+	mysqli_query($koneksi, $query);
+
+	return mysqli_affected_rows($koneksi);
+}
+
+function hapus($id)
+{
+	global $koneksi;
+	mysqli_query($koneksi, "DELETE FROM mahasiswa WHERE id = $id");
+
+	return mysqli_affected_rows($koneksi);
+}
+
+?>

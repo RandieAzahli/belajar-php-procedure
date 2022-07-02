@@ -1,0 +1,23 @@
+h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+table tr td {
+    padding: 7px 14px;
+}
+
+.error {
+    background-color: crimson;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    border: 2pt solid black;
+    box-shadow: 1px 0px 3px grey;
+    font-weight: bold;
+    text-transform: capitalize;
+}

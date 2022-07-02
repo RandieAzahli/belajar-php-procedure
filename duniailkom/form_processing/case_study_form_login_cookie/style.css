@@ -1,0 +1,40 @@
+div.container {
+    width: 550px;
+    padding: 10px 50px 80px;
+    margin: 50px auto;
+    box-shadow: 1px 0px 10px, -1px 0px 10px;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+fieldset {
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    padding: 5px 10px;
+}
+
+button {
+    padding: 3px 7px;
+    float: right;
+    margin-right: 50px;
+}
+
+div.error {
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    border: 1.5pt solid black;
+    background-color: crimson;
+    box-shadow: 1px 0px 3px black;
+}

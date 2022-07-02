@@ -1,0 +1,39 @@
+div.container {
+    width: 550px;
+    padding: 10px 80px 30px;
+    margin: 40px auto;
+    box-shadow: 1px 0px 10px, -1px 0px 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2pt solid black;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+}
+
+th,
+td {
+    padding: 8px 15px;
+    border: 2pt solid black;
+}
+
+th {
+    background-color: crimson;
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    box-shadow: 1px 0px 5px, -1px 0px 5px #FFF;
+}

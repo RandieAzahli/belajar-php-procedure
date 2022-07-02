@@ -1,0 +1,32 @@
+div.container {
+    width: 500px;
+    padding: 10px 80px 30px;
+    margin: 80px auto;
+    box-shadow: 1px 0px 10px, -1px 0px 10px;
+}
+
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+fieldset legend {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+tr,
+td {
+    padding: 8px 5px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+div.error {
+    background-color: crimson;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    border: 2pt solid black;
+}
